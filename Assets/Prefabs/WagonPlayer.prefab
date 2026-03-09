@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8727416051064784384}
   serializedVersion: 2
   m_LocalRotation: {x: 0.24529731, y: -0.31811446, z: 0.085571684, w: 0.91176206}
-  m_LocalPosition: {x: 6.7479105, y: 2.8824825, z: -8.475456}
+  m_LocalPosition: {x: 4.47, y: 3.4, z: -1.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -244,8 +244,8 @@ Rigidbody:
   m_GameObject: {fileID: 216208040125076818}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 1
+  m_AngularDamping: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -286,9 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7c91c093dd01541950443984f9739b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  acceleration: 15
+  acceleration: 30
   maxSpeed: 15
-  turnSpeed: 100
+  turnSpeed: 250
   centerOfMassY: -0.5
   groundCheckDistance: 0.6
   groundLayer:

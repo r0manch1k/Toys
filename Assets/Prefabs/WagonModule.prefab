@@ -126,6 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59447f30626c4148912d25c5c6f0559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WagonAttacher
-  followDistance: 3
+  followDistance: 1.5
   detectionRadius: 5
   indicator: {fileID: 2389186300147637698}
