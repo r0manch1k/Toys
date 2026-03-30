@@ -119,6 +119,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106982188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106982190}
+  - component: {fileID: 106982189}
+  m_Layer: 0
+  m_Name: Surface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &106982189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106982188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 1e361774d11c14d5c945c86e1d652cbc, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &106982190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106982188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1744132722}
+  - {fileID: 1446229726}
+  - {fileID: 376348889}
+  - {fileID: 1768648096}
+  - {fileID: 1957552995}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376348888
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,11 +216,11 @@ Transform:
   m_GameObject: {fileID: 376348888}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.055176, y: 0.6, z: 1.931922}
-  m_LocalScale: {x: 0.6, y: 0.61012, z: 0.61012}
+  m_LocalPosition: {x: -15.27588, y: 3, z: 9.65961}
+  m_LocalScale: {x: 3, y: 3.0506, z: 3.0506}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1744132722}
+  m_Father: {fileID: 106982190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &376348890
 CapsuleCollider:
@@ -491,11 +560,11 @@ Transform:
   m_GameObject: {fileID: 1446229725}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.858, y: 0.6, z: -0.23400001}
-  m_LocalScale: {x: 0.6, y: 0.61012, z: 0.61012}
+  m_LocalPosition: {x: -9.29, y: 3, z: -1.1700001}
+  m_LocalScale: {x: 3, y: 3.0506, z: 3.0506}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1744132722}
+  m_Father: {fileID: 106982190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1446229727
 CapsuleCollider:
@@ -646,7 +715,6 @@ GameObject:
   - component: {fileID: 1744132721}
   - component: {fileID: 1744132720}
   - component: {fileID: 1744132719}
-  - component: {fileID: 1744132723}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -741,49 +809,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744132718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1446229726}
-  - {fileID: 376348889}
-  - {fileID: 1768648096}
-  - {fileID: 1957552995}
-  m_Father: {fileID: 0}
+  m_LocalScale: {x: 12, y: 5, z: 12}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 106982190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1744132723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744132718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
-  m_SerializedVersion: 0
-  m_AgentTypeID: 0
-  m_CollectObjects: 2
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: ac65cd5491c9f4f988be69c4a5c1ca0e, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &1768648095
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,11 +844,11 @@ Transform:
   m_GameObject: {fileID: 1768648095}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.78, y: 0.6, z: 2.07}
-  m_LocalScale: {x: 0.6, y: 0.61012, z: 0.61012}
+  m_LocalPosition: {x: -3.8999999, y: 3, z: 10.349999}
+  m_LocalScale: {x: 3, y: 3.0506, z: 3.0506}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1744132722}
+  m_Father: {fileID: 106982190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1768648097
 CapsuleCollider:
@@ -926,11 +958,11 @@ Transform:
   m_GameObject: {fileID: 1957552994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.45599994, y: 0.6, z: -3.014}
-  m_LocalScale: {x: 0.6, y: 0.61012, z: 0.61012}
+  m_LocalPosition: {x: 2.2799997, y: 3, z: -15.07}
+  m_LocalScale: {x: 3, y: 3.0506, z: 3.0506}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1744132722}
+  m_Father: {fileID: 106982190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1957552996
 CapsuleCollider:
@@ -1017,7 +1049,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 859919960}
-  - {fileID: 1744132722}
   - {fileID: 1092771894}
   - {fileID: 1575181206}
   - {fileID: 555816063}
+  - {fileID: 106982190}
