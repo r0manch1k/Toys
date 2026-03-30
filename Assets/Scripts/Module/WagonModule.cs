@@ -8,10 +8,8 @@ public class WagonModule : Wagon
 
 	private Rigidbody _rb;
 	private SphereCollider _collider;
-	private Wagon _masterWagon;
 	private bool _isAttached;
 
-	public Wagon MasterWagon => _masterWagon;
 	public bool IsAttached => _isAttached;
 
 	private void Awake()
@@ -63,8 +61,8 @@ public class WagonModule : Wagon
 		if ( indicator != null )
 			indicator.SetActive( false );
 
-		transform.position = _masterWagon.transform.position - _masterWagon.transform.forward * followDistance;
-		transform.rotation = _masterWagon.transform.rotation;
+		transform.position = wagon.transform.position - wagon.transform.forward * followDistance;
+		transform.rotation = wagon.transform.rotation;
 
 		Debug.Log( "Wagon module attached" );
 	}

@@ -6,9 +6,11 @@ using UnityEngine;
 public abstract class Wagon : MonoBehaviour
 {
 	protected Wagon _slaveWagon;
+	protected Wagon _masterWagon;
 	public const int MaxSlaves = 10;
 
 	public Wagon SlaveWagon => _slaveWagon;
+	public Wagon MasterWagon => _masterWagon;
 
 	public void Attach(Wagon wagon)
 	{
