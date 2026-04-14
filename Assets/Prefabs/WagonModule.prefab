@@ -102,10 +102,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d2d7b49c7509d47909375f6afe1cddf3, type: 2}
-    - target: {fileID: 684851058654515334, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d2d7b49c7509d47909375f6afe1cddf3, type: 2}
     - target: {fileID: 2531248246037015989, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -176,7 +172,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5574678969405339503}
   m_SourcePrefab: {fileID: 100100000, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
-<<<<<<< HEAD
 --- !u!4 &2010921625188773478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7683772246638488763, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
@@ -187,8 +182,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5792223946286096159, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
   m_PrefabInstance: {fileID: 8163342452336575197}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> main
 --- !u!1 &5375659448327528880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4309990459711398765, guid: 5e5784e3610bdc74897d98da50e9a3d1, type: 3}
@@ -235,4 +228,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WagonAttacher
   followDistance: 1.5
   detectionRadius: 5
-  indicator: {fileID: 0}
+  indicator: {fileID: 2389186300147637698}
